@@ -1,3 +1,3 @@
 # Test concurrency on GitHub
 
-Test setup for concurrency
+Test setup for concurrency.
