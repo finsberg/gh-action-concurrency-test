@@ -1,8 +1,3 @@
-
-concurrency:
-  group: test1
-  cancel-in-progress: false
-
 on: [push]
 
 jobs:
