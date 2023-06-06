@@ -10,10 +10,8 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+
+
 
 jobs:  
 
@@ -23,6 +21,11 @@ jobs:
 
   deploy:
     needs: [build-docs]
+
+    # Allow one concurrent deployment
+    concurrency:
+        group: "pages"
+        cancel-in-progress: true
 
     environment:
       name: github-pages
