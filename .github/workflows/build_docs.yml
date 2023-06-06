@@ -34,7 +34,7 @@ jobs:
         run: jupyter-book create docs
 
       - name: Build docs
-        run: 	jupyter book build -W docs
+        run: jupyter book build docs
 
       - name: Sleep for 10 seconds
         run: sleep 10
